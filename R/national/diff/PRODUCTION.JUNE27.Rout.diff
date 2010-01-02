@@ -1,0 +1,248 @@
+2,3c2,3
+< R : Copyright 2002, The R Development Core Team
+< Version 1.4.1  (2002-01-30)
+---
+> R : Copyright 2001, The R Development Core Team
+> Version 1.2.2  (2001-02-26)
+15a16,17
+> [Previously saved workspace restored]
+> 
+24c26
+< > source("../rewtanh2.R");
+---
+> > source("rewtanh2.R");
+74c76
+< > us _ read.csv(file="../../data/us.with2000census.26june.csv",header=T);
+---
+> > us _ read.csv(file="../data.rev/us.with2000census.26june.csv",header=T);
+254c256
+< +             dyn.unload("../fit_lqd.so");
+---
+> +             dyn.unload("fit_lqd.so");
+256c258
+< +         dyn.load("../fit_lqd.so");
+---
+> +         dyn.load("fit_lqd.so");
+761c763
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+983c985
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+1205c1207
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+1392c1394
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+1600c1602
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+1803c1805
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+2011c2013
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+2199c2201
+< [1] "s0: 1.52151719992017"
+---
+> [1] "s0: 1.52151719992019"
+2243c2245
+< [1] "sigma: 1.52151719992017"
+---
+> [1] "sigma: 1.52151719992019"
+2265c2267
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+2489c2491
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+2703c2705
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+2933c2935
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+3151c3153
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+3371c3373
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+3597c3599
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+3761c3763
+< [1] "s0: 3.39045628378549"
+---
+> [1] "s0: 3.39045628378547"
+3805c3807
+< [1] "sigma: 3.39045628378549"
+---
+> [1] "sigma: 3.39045628378547"
+3815c3817
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+4020c4022
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+4217c4219
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+4412c4414
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+4636c4638
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+4860c4862
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+5086c5088
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+5289c5291
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+5513c5515
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+5721c5723
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+5949c5951
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+6135c6137
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+6331c6333
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+6525c6527
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+6712c6714
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+6925c6927
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+7161c7163
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+7384c7386
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+7591c7593
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+7815c7817
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+8031c8033
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+8195c8197
+< [1] "s0: 1.57378564321817"
+---
+> [1] "s0: 1.57378564321818"
+8234c8236
+< [1] "sigma: 1.57378564321817"
+---
+> [1] "sigma: 1.57378564321818"
+8245c8247
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+8480c8482
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+8763c8765
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+8962c8964
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+9204c9206
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+9406c9408
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+9610c9612
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+9829c9831
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+10040c10042
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+10240c10242
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+10282a10285,10286
+> Warning in plot.histogram(r, freq = freq, col = col, border = border, main = main,  : 
+> 	 the AREAS in the plot are wrong -- rather use `freq=FALSE'!
+10288c10292
+< parms.use.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ parms.use; 
+---
+> parms.use.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ parms.use; 
+10292c10296
+< county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo _ county.results; 
+---
+> county.results.PRODUCTION.JUNE27.ps0.wg0.mg0.musil _ county.results; 
+10310c10314
+< [1] "parms.use.PRODUCTION.JUNE27.ps0.wg0.mg0.lapo"
+---
+> [1] "parms.use.PRODUCTION.JUNE27.ps0.wg0.mg0.musil"
+13401c13405
+< [1]  80.49   3.19 124.99   0.03   0.02
+---
+> [1] 103.33   2.08 117.07   0.03   0.09

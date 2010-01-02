@@ -1,0 +1,55 @@
+*****************
+** DESCRIPTION 
+*****************
+This directory contains both the datasets and code used to create
+tables, figures and other calculations for the article:
+
+  Wand, Jonathan N.~A., Kenneth Shotts, Walter~R.~Mebane, Jasjeet~S.~Sekhon,
+  Michael Herron, and Henry~E.~Brady (2001) ``The Butterfly Did It: The
+  Aberrant Vote for Buchanan in Palm Beach County, Florida''  {\em
+  American Political Science Review,}, 95(4):793--810.
+
+These files contain florida county-level results:
+
+  Figure 3 (p800): abseday2.ps
+  Text (pp800-01): abseday2.Rout
+
+*****************
+** CONTENTS   
+*****************
+
+This directory contains everything necessary to produce the above output.
+
+There are a number of sub-directories:
+
+ distribution: LOOK HERE FOR R CODE and DATA
+ diff    : check original run output with distribution version
+ original: the original output
+
+In the 'distribution' subdirectory:
+
+  abseday.FL2000.csv : raw data
+  abseday2.R         : load data and produce z measures
+  abseday.plot2.R    : plot figure
+
+*****************
+** HOW-TO 
+*****************
+
+In the 'distribution' subdirectory, order of running files matters!
+
+This must be run first:
+
+  R BATCH abseday2.R
+
+which creates output AND .RData file.
+
+This .RData file is necessary for running 
+
+  R BATCH abseday.plot2.R
+
+*****************
+** END OF FILE
+*****************
+
+

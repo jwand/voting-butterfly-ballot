@@ -1,0 +1,17 @@
+2c2,3
+< %%DocumentNeededResources: font Helvetica
+---
+> %%DocumentNeededResources: font Symbol
+> %%+ font Helvetica
+6d6
+< %%+ font Symbol
+48d47
+< %%IncludeResource: font Helvetica
+56d54
+< %%IncludeResource: font Helvetica-Bold
+64d61
+< %%IncludeResource: font Helvetica-Oblique
+72d68
+< %%IncludeResource: font Helvetica-BoldOblique
+80d75
+< %%IncludeResource: font Symbol

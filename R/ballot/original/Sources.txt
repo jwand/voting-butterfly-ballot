@@ -1,0 +1,19 @@
+% point estimates and SEs are from
+% lapo:/home/wrm1/xchg/election/data/ballot/pbcwrk/
+% -rw-rw----    1 wrm1     research    13065 Apr 15 09:36 ea03.Rout
+
+  /home/jwand/xchg/election/data/ballot/pbcwrk:
+  total 44653
+  drwxrws---    2 wrm1     research      292 Sep 19 17:01 .
+  drwxrws---    7 jwand    research      149 Apr 14  2001 ..
+  -rw-rw----    1 wrm1     research     2320 Apr 14  2001 ea01.R
+  -rw-rw----    1 wrm1     research    12612 Apr 14  2001 ea01.Rout
+  -rw-rw----    1 wrm1     research     2368 Apr 14  2001 ea02.R
+  -rw-rw----    1 wrm1     research    11858 Apr 14  2001 ea02.Rout
+  -rw-rw----    1 wrm1     research     3161 Apr 15  2001 ea03.R
+  -rw-rw----    1 wrm1     research    13065 Apr 15  2001 ea03.Rout
+  -rw-rw----    1 wrm1     research     1679 Sep 19 15:48 ea04.R
+  -rw-rw----    1 wrm1     research     7759 Sep 19 15:49 ea04.Rout
+  -rw-rw----    1 wrm1     research 43961153 Sep 19 15:49 .RData
+  -rw-rw----    1 wrm1     research  1683702 Apr 14  2001 table.out
+  -rw-rw----    1 wrm1     research     1797 Apr 14  2001 test.R

@@ -1,0 +1,19 @@
+Copied from 
+
+  /home/jwand/xchg/election/R/abseday:
+  total 223
+  drwxrws---    2 wrm1     research      407 Sep 20 16:54 .
+  drwxrws---   55 jsekhon  research     1667 Feb 21 16:38 ..
+  -rw-rw----    1 wrm1     research    45214 Sep 20 16:52 abseday2.ps
+  -rw-rw----    1 wrm1     research     1986 Jul 30  2001 abseday2.R
+  -rw-rw----    1 wrm1     research    11616 Jul 30  2001 abseday2.Rout
+  -rw-r--r--    1 wrm1     research     7316 Apr  8  2001 abseday.FL2000.csv
+  -rw-rw----    1 wrm1     research     1481 Sep 20 16:52 abseday.plot2.R
+  -rw-rw----    1 wrm1     research     2192 Sep 20 16:52 abseday.plot2.Rout
+  -rw-rw----    1 wrm1     research     1478 Apr  9  2001 abseday.plot.R
+  -rw-rw----    1 wrm1     research     2189 Apr  9  2001 abseday.plot.Rout
+  -rw-rw----    1 wrm1     research    45212 Apr  9  2001 abseday.ps
+  -rw-rw----    1 wrm1     research     2104 Apr  8  2001 abseday.R
+  -rw-rw----    1 wrm1     research    11568 Apr  8  2001 abseday.Rout
+  -rw-r--r--    1 wrm1     research    46140 Sep 20 16:54 abseday.zip
+  -rw-rw----    1 wrm1     research    19957 Sep 20 16:52 .RData

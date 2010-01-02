@@ -1,0 +1,10 @@
+2,3c2,3
+< R : Copyright 2002, The R Development Core Team
+< Version 1.4.1  (2002-01-30)
+---
+> R : Copyright 2001, The R Development Core Team
+> Version 1.2.2  (2001-02-26)
+69c69
+< [1] 2.15 0.07 3.16 0.00 0.00
+---
+> [1] 3.36 0.28 4.03 0.00 0.00

@@ -1,0 +1,55 @@
+/home/work/xchg/election/apsr/R/distribution.scripts/../Manifest.zip.txt created: 
+Tue Apr  2 19:11:57 EST 2002
+DO NOT EDIT -- automatically created by R/distribution.scripts/make.zip.csh
+
+** Contents of absentee.all.zip
+
+Archive:  /home/work/xchg/election/apsr/R/distribution.scripts/../distribution/absentee.all.zip
+    testing: R/Acknowledgements       OK
+    testing: R/Contact.info           OK
+    testing: R/Manifest.zip.txt       OK
+    testing: R/README                 OK
+    testing: R/Cplus/                 OK
+    testing: R/Cplus/fit_lqd1.so      OK
+    testing: R/Cplus/makefile         OK
+    testing: R/Cplus/fit_lqd1.o       OK
+    testing: R/Cplus/fit_lqd.so       OK
+    testing: R/Cplus/fit_lqd1.cpp     OK
+    testing: R/absentee/              OK
+    testing: R/absentee/data/         OK
+    testing: R/absentee/data/abseday.FL2000.csv   OK
+    testing: R/absentee/diff/         OK
+    testing: R/absentee/diff/abseday.plot2.Rout.diff   OK
+    testing: R/absentee/diff/go.diff.csh   OK
+    testing: R/absentee/diff/abseday2.Rout.diff   OK
+    testing: R/absentee/diff/abseday2.ps.diff   OK
+    testing: R/absentee/original/     OK
+    testing: R/absentee/original/abseday2.Rout   OK
+    testing: R/absentee/original/abseday.plot2.R   OK
+    testing: R/absentee/original/abseday2.R   OK
+    testing: R/absentee/original/Sources.txt   OK
+    testing: R/absentee/original/abseday2.ps   OK
+    testing: R/absentee/original/abseday.plot2.Rout   OK
+    testing: R/absentee/original/.RData   OK
+    testing: R/absentee/original/abseday.FL2000.csv   OK
+    testing: R/absentee/README        OK
+    testing: R/absentee/distribution/   OK
+    testing: R/absentee/distribution/abseday2.Rout   OK
+    testing: R/absentee/distribution/abseday.plot2.R   OK
+    testing: R/absentee/distribution/abseday2.R   OK
+    testing: R/absentee/distribution/abseday2.ps   OK
+    testing: R/absentee/distribution/abseday.plot2.Rout   OK
+    testing: R/absentee/distribution/.RData   OK
+No errors detected in compressed data of /home/work/xchg/election/apsr/R/distribution.scripts/../distribution/absentee.all.zip.
+
+** Contents of absentee.data.zip
+
+Archive:  /home/work/xchg/election/apsr/R/distribution.scripts/../distribution/absentee.data.zip
+    testing: R/Acknowledgements       OK
+    testing: R/Contact.info           OK
+    testing: R/Manifest.zip.txt       OK
+    testing: R/README                 OK
+    testing: R/absentee/data/         OK
+    testing: R/absentee/data/abseday.FL2000.csv   OK
+    testing: R/absentee/README        OK
+No errors detected in compressed data of /home/work/xchg/election/apsr/R/distribution.scripts/../distribution/absentee.data.zip.

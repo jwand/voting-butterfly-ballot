@@ -1,0 +1,171 @@
+2,3c2,3
+< R : Copyright 2000, The R Development Core Team
+< Version 1.2.0  (2000-12-15)
+---
+> R : Copyright 2001, The R Development Core Team
+> Version 1.3.0  (2001-06-22)
+16,17d15
+< [Previously saved workspace restored]
+< 
+20c18
+< > source("../rgenoud.R");
+---
+> > library("rgenoud");
+51c49
+< > pbc.pres <- read.table(file = "../2000pres.parsed.txt", 
+---
+> > pbc.pres <- read.table(file = "../../data/2000pres.parsed.txt", 
+74c72
+< > pbc.senate <- read.table(file = "../2000senate.parsed.txt", 
+---
+> > pbc.senate <- read.table(file = "../../data/2000senate.parsed.txt", 
+91c89
+< > pbc.ss35 <- read.table(file = "../pbc.statesenate35.all.txt", 
+---
+> > pbc.ss35 <- read.table(file = "../../data/pbc.statesenate35.all.txt", 
+105c103
+< > pbc.us16 <- read.table(file = "../pbc.ushouse16.all.txt", 
+---
+> > pbc.us16 <- read.table(file = "../../data/pbc.ushouse16.all.txt", 
+682c680
+< AIC: 6550.5
+---
+> AIC: 560.19
+710c708
+< AIC: 6550.5
+---
+> AIC: 560.19
+716a715
+> Warning in eval(expr, envir, enclos) : non-integer #successes in a binomial glm!
+740c739
+< AIC: 24495
+---
+> AIC: 767.47
+768c767
+< AIC: 24061
+---
+> AIC: 763.28
+798c797
+< AIC: 10229
+---
+> AIC: 757.2
+826c825
+< AIC: 10229
+---
+> AIC: 757.2
+832a832
+> Warning in eval(expr, envir, enclos) : non-integer #successes in a binomial glm!
+856c856
+< AIC: 24737
+---
+> AIC: 1042.2
+884c884
+< AIC: 23724
+---
+> AIC: 1014.9
+937a938
+> Warning in eval(expr, envir, enclos) : non-integer #successes in a binomial glm!
+959c960
+< AIC: 24495
+---
+> AIC: 767.47
+965c966
+< Sat Feb 10 17:36:46 2001
+---
+> Thu Feb 21 19:19:58 2002
+973,981c974,982
+< 	(0) Cloning........................... 	15
+< 	(1) Uniform Mutation.................. 	12
+< 	(2) Boundary Mutation................. 	12
+< 	(3) Non-Uniform Mutation.............. 	12
+< 	(4) Polytope Crossover................ 	12
+< 	(5) Multiple Point Simple Crossover... 	12
+< 	(6) Whole Non-Uniform Mutation........ 	12
+< 	(7) Heuristic Crossover............... 	12
+< 	(8) Local-Minimum Crossover........... 	0
+---
+> 	(1) Cloning........................... 	15
+> 	(2) Uniform Mutation.................. 	12
+> 	(3) Boundary Mutation................. 	12
+> 	(4) Non-Uniform Mutation.............. 	12
+> 	(5) Polytope Crossover................ 	12
+> 	(6) Multiple Point Simple Crossover... 	12
+> 	(7) Whole Non-Uniform Mutation........ 	12
+> 	(8) Heuristic Crossover............... 	12
+> 	(9) Local-Minimum Crossover........... 	0
+983c984
+< SOFT Maximum Number of Generations: 10
+---
+> HARD Maximum Number of Generations: 10
+1051a1053
+>       1 	6.922503e-01
+1085a1088
+>       2 	6.922503e-01
+1093,1095c1096,1098
+< #null........... 0
+< #unique......... 36, #Total UniqueCount: 194
+< tobs............ 100
+---
+> #null........... 1
+> #unique......... 49, #Total UniqueCount: 207
+> tobs............ 99
+1098,1101c1101,1104
+< mean............ -1.490145e-01
+< var............. 4.294374e+02
+< skewness........ 2.768178e+00
+< kurtosis........ 3.206206e+01
+---
+> mean............ -5.865324e+00
+> var............. 6.605668e+02
+> skewness........ -3.104793e+00
+> kurtosis........ 2.011147e+01
+1106,1109c1109,1112
+< mean............ 2.397639e-01
+< var............. 3.280375e+02
+< skewness........ 6.639887e+00
+< kurtosis........ 5.724326e+01
+---
+> mean............ 1.849300e+00
+> var............. 1.062154e+03
+> skewness........ 1.342841e+00
+> kurtosis........ 1.381624e+01
+1114,1117c1117,1120
+< mean............ -2.395974e-01
+< var............. 8.659559e+02
+< skewness........ -1.715763e+00
+< kurtosis........ 1.571059e+01
+---
+> mean............ 1.804083e-01
+> var............. 7.379180e+02
+> skewness........ 5.013515e-01
+> kurtosis........ 1.707320e+01
+1124c1127
+< Best Fit Found at Generation 1
+---
+> Best Fit Found at Generation 2
+1130c1133
+<  X[ 1] :	-1.816408e+00	G[ 1] :	-1.094175e+00
+---
+>  X[ 1] :	-1.816408e+00	G[ 1] :	-1.090544e+00
+1132c1135
+<  X[ 3] :	5.005099e-01	G[ 3] :	7.988638e-03
+---
+>  X[ 3] :	5.005099e-01	G[ 3] :	7.988640e-03
+1134c1137
+< Solution Found Generation 1
+---
+> Solution Found Generation 2
+1138,1139c1141,1142
+< Sat Feb 10 17:37:02 2001
+< Total run time : 0 hours 0 minutes and 16 seconds
+---
+> Thu Feb 21 19:20:16 2002
+> Total run time : 0 hours 0 minutes and 18 seconds
+1182c1185
+< [1] "s0: 1.5362034315823"
+---
+> [1] "s0: 1.53620343158229"
+1295c1298
+< [1] 18.98  1.25 20.70  0.00  0.00
+---
+> [1] 21.55  0.38 21.91  0.02  0.03

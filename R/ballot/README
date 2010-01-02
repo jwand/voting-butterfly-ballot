@@ -1,0 +1,46 @@
+*****************
+** DESCRIPTION 
+*****************
+This directory contains both the datasets and code used to create
+tables, figures and other calculations for the article:
+
+  Wand, Jonathan N.~A., Kenneth Shotts, Walter~R.~Mebane, Jasjeet~S.~Sekhon,
+  Michael Herron, and Henry~E.~Brady (2001) ``The Butterfly Did It: The
+  Aberrant Vote for Buchanan in Palm Beach County, Florida''  {\em
+  American Political Science Review,}, 95(4):793--810.
+
+These files contain ballot-level results:
+
+  Table 3 (p802)  : ea03.Rout
+  Table 4 (p803)  : ea03.Rout
+
+*****************
+** CONTENTS   
+*****************
+
+This directory contains everything necessary to produce the above output.
+
+There are a number of sub-directories:
+
+ data    : contains data
+ distribution: LOOK HERE FOR R CODE 
+ diff    : check original run output with distribution version
+ original: the original output
+
+In the 'distribution' subdirectory:
+
+ ea03.R     : main R code
+ table.out  : ballot data
+
+
+*****************
+** HOW-TO 
+*****************
+
+In the 'distribution' subdirectory,
+
+  R BATCH ea03.R
+
+*****************
+** END OF FILE
+*****************

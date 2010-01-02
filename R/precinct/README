@@ -1,0 +1,57 @@
+*****************
+** DESCRIPTION 
+*****************
+This directory contains both the datasets and code used to create
+tables, figures and other calculations for the article:
+
+  Wand, Jonathan N.~A., Kenneth Shotts, Walter~R.~Mebane, Jasjeet~S.~Sekhon,
+  Michael Herron, and Henry~E.~Brady (2001) ``The Butterfly Did It: The
+  Aberrant Vote for Buchanan in Palm Beach County, Florida''  {\em
+  American Political Science Review,}, 95(4):793--810.
+
+These files contain Palm Beach County precinct-level results:
+
+  Table 2 (p801)
+
+*****************
+** CONTENTS   
+*****************
+
+This directory contains everything necessary to produce the above output.
+
+There are a number of sub-directories:
+
+ distribution: LOOK HERE FOR R CODE
+ data    : LOOK HERE FOR RAW DATA in ascii format
+ diff    : check original run output with distribution version
+ original: the original output
+
+In the 'distribution' subdirectory:
+
+ all2 : rewt3.Rout (all precincts, Buchanan vote)
+ v1   : rewt2.Rout (State Senate 35 precincts,  Buchanan vote)
+ v2   : rewt2.Rout (State Senate 35 precincts,  Lowe vote)
+ v3   : rewt3.Rout (US House 16 precincts, Buchanan vote)
+ v4   : rewt3.Rout (US House 16 precincts, McGuire vote)
+
+*****************
+** HOW-TO 
+*****************
+
+In each 'distribution' subdirectory, order of running files matters!
+
+Run lqd file first, eg.,
+
+  R BATCH us16.mcguire.R
+
+which creates output AND .RData file.
+
+This .RData file is necessary for running the tanh estimation
+
+  R BATCH rewt3.R
+
+*****************
+** END OF FILE
+*****************
+
+

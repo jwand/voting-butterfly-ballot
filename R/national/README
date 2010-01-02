@@ -1,0 +1,68 @@
+*****************
+** DESCRIPTION 
+*****************
+This directory contains both the datasets and code used to create
+tables, figures and other calculations for the article:
+
+  Wand, Jonathan N.~A., Kenneth Shotts, Walter~R.~Mebane, Jasjeet~S.~Sekhon,
+  Michael Herron, and Henry~E.~Brady (2001) ``The Butterfly Did It: The
+  Aberrant Vote for Buchanan in Palm Beach County, Florida''  {\em
+  American Political Science Review,}, 95(4):793--810.
+
+These files contain national level results:
+
+  Table 1 (p799)  : 2000/PRODUCTION.JUNE27.Rout
+  Figure 2 (p798) : 2000/PRODUCTION.BOX.ps
+  Table B-1 (p808): 2000/PRODUCTION.JUNE27.Rout
+  p.797 and fn15  : 2000small/a4int2.ps1000.wg200.R
+  p.798           : FL1996/natplot.tanh6.partial.FL96.1000.R
+
+*****************
+** CONTENTS   
+*****************
+
+This directory contains everything necessary to produce the above output.
+
+There are a number of sub-directories:
+
+ distribution: LOOK HERE FOR R CODE
+ data    : LOOK HERE FOR RAW DATA in ascii format
+ diff    : check original run output with distribution version
+ original: the original output
+
+In the 'distribution/2000' subdirectory:
+
+  PRODUCTION.JUNE27.R : main R code
+  PRODUCTION.BOX.R    : makes box plots
+  rewtanh2.R          : used by PRODUCTION.JUNE27.R 
+  prcomp4.R           : used by PRODUCTION.JUNE27.R 
+  parms.use.ak6.ps1000.wg100.mg1000.lapo : starting parameter values
+
+
+In the 'distribution/2000small' (pooled analysis of small states)
+  a4int2.ps1000.wg200.R : page 797 and fn15  : main R code
+
+In the 'distribution/FL1996'
+  natplot.tanh6.partial.FL96.1000.R : main R code
+
+*****************
+** HOW-TO 
+*****************
+
+For example, in the 'distribution/2000' subdirectory, order of running files matters!
+
+This must be run first:
+
+  R BATCH PRODUCTION.JUNE27.R
+
+which creates output AND .RData file.
+
+This .RData file is necessary for running 
+
+  R BATCH PRODUCTION.BOX.R 
+
+*****************
+** END OF FILE
+*****************
+
+

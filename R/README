@@ -1,0 +1,71 @@
+This directory contains both the datasets and code used to create
+the tables, figures and other calculations for the article:
+
+  Wand, Jonathan N.~A., Kenneth Shotts, Walter~R.~Mebane, Jasjeet~S.~Sekhon,
+  Michael Herron, and Henry~E.~Brady (2001) ``The Butterfly Did It: The
+  Aberrant Vote for Buchanan in Palm Beach County, Florida''  {\em
+  American Political Science Review,}, 95(4):793--810.
+
+** OVERVIEW:
+
+1. The data and code are bundled into four separate groups (see below
+for descriptions):
+
+  national 
+  precinct 
+  ballot 
+  absentee 
+
+See Manifest.txt for a specific list of files contained within each bundle.
+
+2. You can obtain either all files or data-only files:
+
+a. Data only: For those who only want to obtain the datasets and
+documentation.  The bundles are appended with the name 'data', e.g.,
+
+  national.data.*
+  precinct.data.*
+  ballot.data.* 
+  absentee.data.* 
+
+b. All files: For those who want data and documentation PLUS R code
+and output from analyses. The bundles are appended with the name 'all', e.g.,
+
+  national.all.*
+  precinct.all.*
+  ballot.all.*
+  absentee.all.*
+
+3. You can download each bundle in two formats, tar/gzip (.tgz) or zip
+(.zip) files.
+
+
+** DESCRIPTIONS:
+
+The sub-directories contain the following:
+
+'national' (national level results):
+
+  Table 1 (p799)  : 2000/PRODUCTION.JUNE27.Rout
+  Figure 2 (p798) : 2000/PRODUCTION.BOX.ps
+  Table B-1 (p808): 2000/PRODUCTION.JUNE27.Rout
+  p.797 and fn15  : 2000small/a4int2.ps1000.wg200.R
+  p.798           : FL1996/natplot.tanh6.partial.FL96.1000.R
+
+'precincts' Palm Beach County precinct-level results:
+
+  Table 2 (p801): see README file in 'precincts'
+
+'absentee' (florida county-level results):
+
+  Figure 3 (p800): abseday2.ps
+  Text (pp800-01): abseday2.Rout
+
+'ballot' (ballot-level results):
+
+  Table 3 (p802)  : ea03.Rout
+  Table 4 (p803)  : ea03.Rout
+
+'Cplus'  (C++ source code for lqd estimator)
+
+-- End of README --

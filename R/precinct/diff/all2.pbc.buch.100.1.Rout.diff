@@ -1,0 +1,117 @@
+2,3c2,3
+< R : Copyright 2000, The R Development Core Team
+< Version 1.2.0  (2000-12-15)
+---
+> R : Copyright 2001, The R Development Core Team
+> Version 1.3.0  (2001-06-22)
+16,17d15
+< [Previously saved workspace restored]
+< 
+20c18
+< > source("../rgenoud.R");
+---
+> > library("rgenoud")
+51c49
+< > pbc.pres <- read.table(file = "../2000pres.parsed.txt", 
+---
+> > pbc.pres <- read.table(file = "../../data/2000pres.parsed.txt", 
+74c72
+< > pbc.senate <- read.table(file = "../2000senate.parsed.txt", 
+---
+> > pbc.senate <- read.table(file = "../../data/2000senate.parsed.txt", 
+91c89
+< > pbc.ss35 <- read.table(file = "../pbc.statesenate35.all.txt", 
+---
+> > pbc.ss35 <- read.table(file = "../../data/pbc.statesenate35.all.txt", 
+105c103
+< > pbc.us16 <- read.table(file = "../pbc.ushouse16.all.txt", 
+---
+> > pbc.us16 <- read.table(file = "../../data/pbc.ushouse16.all.txt", 
+682c680
+< AIC: 6550.5
+---
+> AIC: 560.19
+710c708
+< AIC: 6550.5
+---
+> AIC: 560.19
+716a715
+> Warning in eval(expr, envir, enclos) : non-integer #successes in a binomial glm!
+740c739
+< AIC: 24495
+---
+> AIC: 767.47
+768c767
+< AIC: 24061
+---
+> AIC: 763.28
+798c797
+< AIC: 10229
+---
+> AIC: 757.2
+826c825
+< AIC: 10229
+---
+> AIC: 757.2
+832a832
+> Warning in eval(expr, envir, enclos) : non-integer #successes in a binomial glm!
+856c856
+< AIC: 24737
+---
+> AIC: 1042.2
+884c884
+< AIC: 23724
+---
+> AIC: 1014.9
+1606c1606
+< AIC: 37794
+---
+> AIC: 2821.8
+1612c1612
+< Mon Feb 26 11:57:59 2001
+---
+> Sat Feb 23 15:29:39 2002
+1620,1628c1620,1628
+< 	(0) Cloning........................... 	15
+< 	(1) Uniform Mutation.................. 	12
+< 	(2) Boundary Mutation................. 	12
+< 	(3) Non-Uniform Mutation.............. 	12
+< 	(4) Polytope Crossover................ 	12
+< 	(5) Multiple Point Simple Crossover... 	12
+< 	(6) Whole Non-Uniform Mutation........ 	12
+< 	(7) Heuristic Crossover............... 	12
+< 	(8) Local-Minimum Crossover........... 	0
+---
+> 	(1) Cloning........................... 	15
+> 	(2) Uniform Mutation.................. 	12
+> 	(3) Boundary Mutation................. 	12
+> 	(4) Non-Uniform Mutation.............. 	12
+> 	(5) Polytope Crossover................ 	12
+> 	(6) Multiple Point Simple Crossover... 	12
+> 	(7) Whole Non-Uniform Mutation........ 	12
+> 	(8) Heuristic Crossover............... 	12
+> 	(9) Local-Minimum Crossover........... 	0
+1630c1630
+< SOFT Maximum Number of Generations: 10
+---
+> HARD Maximum Number of Generations: 10
+1777,1778c1777,1778
+<  X[ 1] :	-5.563711e+00	G[ 1] :	2.144631e-01
+<  X[ 2] :	1.698151e+00	G[ 2] :	3.842943e-01
+---
+>  X[ 1] :	-5.563711e+00	G[ 1] :	2.147268e-01
+>  X[ 2] :	1.698151e+00	G[ 2] :	3.707927e-01
+1785,1786c1785,1786
+< Mon Feb 26 12:07:40 2001
+< Total run time : 0 hours 9 minutes and 41 seconds
+---
+> Sat Feb 23 15:43:10 2002
+> Total run time : 0 hours 13 minutes and 31 seconds
+1999c1999
+< [1] "s0: 1.22369759722854"
+---
+> [1] "s0: 1.22369759722853"
+2522c2522
+< [1] 544.69  42.03 587.30   0.01   0.00
+---
+> [1] 762.40  55.89 818.49   0.02   0.02

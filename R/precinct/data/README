@@ -1,0 +1,60 @@
+2000pres.parsed.txt: 2000 presidential votes by precinct in PBC
+
+** Columns: 
+obs  
+precinct     -- precinct number
+busha  	     
+bushm        -- votes for bush
+gorea	     
+gorem        -- votes for gore
+brownea	     
+brownem      -- votes for browne
+nadera 	     
+naderm       -- votes for nader
+harrisa      
+harrism      -- votes for harris
+hagelina     
+hagelinm     -- votes for hagelin
+buchanana    
+buchananm    -- votes for buchanan
+mcreynoldsa
+mcreynoldsm  -- votes for mcreynolds
+phillipsa
+phillipsm    -- votes for philips
+mooreheada
+mooreheadm   -- votes for moorehead
+undera
+underm       -- undervotes
+overa
+overm        -- overvotes
+
+2000senate.parsed.txt: 2000 US Senate, precinct level, vote counts
+
+** Columns : 
+precinct
+mccollum
+nelson 
+simonetta   
+deckard     
+logan    
+martin  
+mccormick   
+writein
+
+pbc.statesenate35.all.txt: 2000 FL State Senate,district 35, precinct level, vote counts
+
+** Columns: 
+precinct       
+vaughan    
+rossin      
+lowe
+
+pbc.ushouse16.all.txt:  2000 US House race, district 16, precinct level, vote counts
+
+** Columns:
+precinct         
+foley     
+brown   
+mcguire    
+writein
+

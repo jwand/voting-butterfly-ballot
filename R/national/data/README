@@ -1,0 +1,86 @@
+** General:
+
+1. All data is at the county level.
+
+2. Data is comma delimited, one county per row
+
+3. The dataset includes a number of columns of data which were not
+used in the final anlysis.  please ignore this unlabeled data.
+
+** Descriptions:
+
+"state" -- postal abbreviation
+"name"  -- county name
+"gore"     -- 2000 vote (count)
+"bush"     -- 2000 vote (count)
+"buchanan" -- 2000 vote (count)
+"nader"    -- 2000 vote (count)
+"browne"   -- 2000 vote (count)
+"philips"  -- 2000 vote (count)
+"hagelin"  -- 2000 vote (count)
+"write"    -- 2000 vote write-in (count)
+"inc"      -- 1989 median household money income (dollars)
+"abo"      -- 1990 census population American Indian or Alaska Native
+"asian"    -- 1990 census population Asian and Pacific Islander
+"college"  -- 1990 census proportion of population with college degree
+"black"    -- 1990 census population Black
+"hispanic" -- 1990 census population Hispanic
+"white"    -- 1990 census population White
+"pop"      -- 1992 population
+"density"  -- 1992 population density (computed as 1992 population/1990 square miles) 
+"dem92"    -- vote 1992 democrat  (count)
+"perot92"  -- vote 1992 perot (count)
+"rep92"    -- vote 1992 republican  (count)
+"rep96"    -- vote 1996 republican  (count)
+"dem96"    -- vote 1996 democrat (count)
+"perot96"  -- vote 1996 perot (count)
+"brown96"  -- vote 1996 browne (count)
+"phil96"   -- vote 1996 philips (count)
+"nader96"  -- vote 1996 nader (count)
+"hage96"   -- vote 1996 hagelin (count)
+"oth96"    -- vote 1996 other (count)
+"vtot00"   -- vote 2000 total (count)
+"vtot96"   -- vote 1996 total (count)
+"vtot92"   -- vote 1992 total (count)
+"pblack"   
+"pgore"
+"pbush"
+"pbuchanan"
+"pnader"
+"prep92"   -- 1992 proportion of votes received by Republican pres candidate
+"pperot92" -- 1992 proportion of votes received by Perot
+"prep96"   -- 1996 proportion of votes received by Republican pres candidate
+"pperot96" -- 1996 proportion of votes received by Perot
+"county.fips" -- fips code for county (5digit)
+"state.fips"
+"new.population"
+"new.white"
+"new.black"
+"new.native"
+"new.asian"
+"new.other"
+"new.hispanic"
+"name9"
+"new.fips"
+"cen99.white"
+"cen99.whhisp"
+"cen99.black"
+"cen99.native"
+"cen99.asian"
+"cen99.hispanic"
+"cen99.population"
+"cen00.population"  -- 2000 census population total 
+"cen00.white"       -- 2000 census population (number white)
+"cen00.black"       -- 2000 census population (number black)
+"cen00.native"      -- 2000 census population native american (number native american)
+"cen00.asian"       -- 2000 census population (number asian)
+"cen00.other"       -- 2000 census population (number other)
+"cen00.hispanic"    -- 2000 census population (number hispanic)
+
+NOTE: The 2000 Census data were built from Census 2000 Redistricting
+Data (Public Law 94-171) Summary File, Matrices PL1, PL2, PL3 and PL4
+(U.S.\ Census Bureau.  2001.  ``FactFinder Tables.''  Accessed April
+7, 2001, at \texttt{http://factfinder.census.gov})
+
+NOTE: we get the 2000 census density by dividing 2000 population/1990 square miles in prcomp4.R
+

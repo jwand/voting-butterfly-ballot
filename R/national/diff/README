@@ -1,0 +1,16 @@
+This file compares the original output to that from rerunning the files 
+for distribution.
+
+
+# PRODUCTION.JUNE27.Rout
+# differs in 15th decimal place for two s0 and sigma for some states:
+
+< [1] "s0: 1.52151719992017"
+---
+> [1] "s0: 1.52151719992019"
+2243c2245
+< [1] "sigma: 1.52151719992017"
+---
+> [1] "sigma: 1.52151719992019"
+
+

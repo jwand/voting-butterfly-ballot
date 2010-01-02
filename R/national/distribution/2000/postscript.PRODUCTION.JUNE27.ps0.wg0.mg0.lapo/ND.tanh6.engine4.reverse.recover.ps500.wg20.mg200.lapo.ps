@@ -1,0 +1,387 @@
+%!PS-Adobe-3.0
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Helvetica-Oblique
+%%+ font Helvetica-BoldOblique
+%%+ font Symbol
+%%DocumentMedia: a4 595 841 0 () ()
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%Orientation: Portrait
+%%BoundingBox: 82 133 514 709
+%%EndComments
+%%BeginProlog
+/bp  { gs gs } def
+% begin .ps.prolog
+/gs  { gsave } def
+/gr  { grestore } def
+/ep  { showpage gr gr } def
+/m   { moveto } def
+/l   { lineto } def
+/np  { newpath } def
+/cp  { closepath } def
+/f   { fill } def
+/o   { stroke } def
+/c   { newpath 0 360 arc } def
+/r   { 3 index 3 index moveto 1 index 4 -1 roll
+       lineto exch 1 index lineto lineto closepath } def
+/p1  { stroke } def
+/p2  { gsave bg setrgbcolor fill grestore newpath } def
+/p3  { gsave bg setrgbcolor fill grestore stroke } def
+/t   { 6 -2 roll moveto gsave rotate
+       ps mul neg 0 2 1 roll rmoveto
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } def
+/rgb { setrgbcolor } def
+/s   { scalefont setfont } def
+/R   { /Font1 findfont } def
+/B   { /Font2 findfont } def
+/I   { /Font3 findfont } def
+/BI  { /Font4 findfont } def
+/S   { /Font5 findfont } def
+1 setlinecap 1 setlinejoin
+% end   .ps.prolog
+%%IncludeResource: font Helvetica
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font Helvetica-Oblique
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font Helvetica-BoldOblique
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font Symbol
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+140.68 494.38 483.40 649.90 cl
+0.0000 0.0000 0.0000 rgb
+0.75 setlinewidth
+[] 0 setdash
+357.49 542.12 2.70 c p1
+299.24 569.02 2.70 c p1
+336.93 577.34 2.70 c p1
+413.32 579.68 2.70 c p1
+329.67 530.45 2.70 c p1
+356.68 532.40 2.70 c p1
+351.84 549.65 2.70 c p1
+226.57 599.43 2.70 c p1
+153.37 644.14 2.70 c p1
+343.55 616.40 2.70 c p1
+337.08 537.66 2.70 c p1
+277.29 554.09 2.70 c p1
+375.49 561.03 2.70 c p1
+316.15 597.52 2.70 c p1
+409.84 577.29 2.70 c p1
+343.98 546.38 2.70 c p1
+402.34 544.16 2.70 c p1
+173.87 560.93 2.70 c p1
+432.11 577.47 2.70 c p1
+341.87 556.56 2.70 c p1
+393.74 559.92 2.70 c p1
+385.03 630.03 2.70 c p1
+366.52 586.61 2.70 c p1
+406.08 602.47 2.70 c p1
+346.45 544.63 2.70 c p1
+419.96 558.18 2.70 c p1
+354.97 519.69 2.70 c p1
+331.68 562.87 2.70 c p1
+304.15 585.43 2.70 c p1
+299.78 593.73 2.70 c p1
+294.43 544.92 2.70 c p1
+312.71 569.16 2.70 c p1
+362.37 569.84 2.70 c p1
+331.61 568.30 2.70 c p1
+357.90 558.51 2.70 c p1
+287.11 559.57 2.70 c p1
+279.45 564.72 2.70 c p1
+308.08 548.61 2.70 c p1
+298.58 572.46 2.70 c p1
+253.40 582.56 2.70 c p1
+302.46 566.20 2.70 c p1
+470.70 558.36 2.70 c p1
+307.05 554.37 2.70 c p1
+451.06 566.19 2.70 c p1
+300.44 552.94 2.70 c p1
+294.92 580.89 2.70 c p1
+275.79 573.95 2.70 c p1
+311.62 581.24 2.70 c p1
+289.68 547.98 2.70 c p1
+288.85 598.91 2.70 c p1
+201.36 518.47 2.70 c p1
+347.28 558.92 2.70 c p1
+306.59 500.14 2.70 c p1
+81.64 132.94 513.64 708.94 cl
+0.0000 0.0000 0.0000 rgb
+0.75 setlinewidth
+[] 0 setdash
+np
+214.81 494.38 m
+464.08 494.38 l
+o
+np
+214.81 494.38 m
+214.81 487.18 l
+o
+np
+297.90 494.38 m
+297.90 487.18 l
+o
+np
+380.99 494.38 m
+380.99 487.18 l
+o
+np
+464.08 494.38 m
+464.08 487.18 l
+o
+/ps 12 def R 12 s
+214.81 468.46 (0.02) 0.50 0.00 0.00 t
+297.90 468.46 (0.03) 0.50 0.00 0.00 t
+380.99 468.46 (0.04) 0.50 0.00 0.00 t
+464.08 468.46 (0.05) 0.50 0.00 0.00 t
+np
+140.68 503.61 m
+140.68 647.17 l
+o
+np
+140.68 503.61 m
+133.48 503.61 l
+o
+np
+140.68 524.11 m
+133.48 524.11 l
+o
+np
+140.68 544.62 m
+133.48 544.62 l
+o
+np
+140.68 565.13 m
+133.48 565.13 l
+o
+np
+140.68 585.64 m
+133.48 585.64 l
+o
+np
+140.68 606.15 m
+133.48 606.15 l
+o
+np
+140.68 626.66 m
+133.48 626.66 l
+o
+np
+140.68 647.17 m
+133.48 647.17 l
+o
+123.40 503.61 (-3) 0.50 0.00 90.00 t
+123.40 544.62 (-1) 0.50 0.00 90.00 t
+123.40 565.13 (0) 0.50 0.00 90.00 t
+123.40 585.64 (1) 0.50 0.00 90.00 t
+123.40 606.15 (2) 0.50 0.00 90.00 t
+123.40 626.66 (3) 0.50 0.00 90.00 t
+123.40 647.17 (4) 0.50 0.00 90.00 t
+np
+140.68 494.38 m
+483.40 494.38 l
+483.40 649.90 l
+140.68 649.90 l
+140.68 494.38 l
+o
+81.64 420.94 513.64 708.94 cl
+/ps 12 def R 12 s
+0.0000 0.0000 0.0000 rgb
+312.04 439.66 (Expected Proportion) 0.50 0.00 0.00 t
+94.60 572.14 (Studentized Residual) 0.50 0.00 90.00 t
+/ps 14 def B 14 s
+312.04 683.04 (Buchanan outliers in  ND ) 0.50 0.00 0.00 t
+312.04 665.76 ( Vote Proportions) 0.50 0.00 0.00 t
+/ps 12 def R 12 s
+312.04 425.26 (Proportion versus Studentized Residuals) 0.50 0.00 0.00 t
+140.68 483.40 206.38 361.90 cl
+140.68 206.38 483.40 361.90 cl
+0.0000 0.0000 0.0000 rgb
+0.75 setlinewidth
+[] 0 setdash
+233.53 254.12 2.70 c p1
+328.17 281.02 2.70 c p1
+348.95 289.34 2.70 c p1
+356.62 291.68 2.70 c p1
+210.28 242.45 2.70 c p1
+219.27 244.40 2.70 c p1
+267.46 261.65 2.70 c p1
+404.80 311.43 2.70 c p1
+470.70 356.14 2.70 c p1
+425.08 328.40 2.70 c p1
+226.87 249.66 2.70 c p1
+275.13 266.09 2.70 c p1
+308.84 273.03 2.70 c p1
+390.55 309.52 2.70 c p1
+345.29 289.29 2.70 c p1
+254.71 258.38 2.70 c p1
+239.50 256.16 2.70 c p1
+305.64 272.93 2.70 c p1
+352.72 289.47 2.70 c p1
+282.35 268.56 2.70 c p1
+302.42 271.92 2.70 c p1
+440.85 342.03 2.70 c p1
+379.13 298.61 2.70 c p1
+413.80 314.47 2.70 c p1
+244.95 256.63 2.70 c p1
+285.83 270.18 2.70 c p1
+198.99 231.69 2.70 c p1
+312.04 274.87 2.70 c p1
+374.08 297.43 2.70 c p1
+384.58 305.73 2.70 c p1
+249.99 256.92 2.70 c p1
+331.48 281.16 2.70 c p1
+334.83 281.84 2.70 c p1
+324.90 280.30 2.70 c p1
+292.60 270.51 2.70 c p1
+299.18 271.57 2.70 c p1
+315.23 276.72 2.70 c p1
+263.41 260.61 2.70 c p1
+338.25 284.46 2.70 c p1
+369.36 294.56 2.70 c p1
+321.66 278.20 2.70 c p1
+289.24 270.36 2.70 c p1
+278.79 266.37 2.70 c p1
+318.44 278.19 2.70 c p1
+271.36 264.94 2.70 c p1
+360.67 292.89 2.70 c p1
+341.73 285.95 2.70 c p1
+364.91 293.24 2.70 c p1
+259.17 259.98 2.70 c p1
+397.20 310.91 2.70 c p1
+183.22 230.47 2.70 c p1
+295.91 270.92 2.70 c p1
+153.37 212.14 2.70 c p1
+81.64 132.94 513.64 708.94 cl
+0.0000 0.0000 0.0000 rgb
+0.75 setlinewidth
+[] 0 setdash
+np
+176.89 206.38 m
+447.18 206.38 l
+o
+np
+176.89 206.38 m
+176.89 199.18 l
+o
+np
+244.47 206.38 m
+244.47 199.18 l
+o
+np
+312.04 206.38 m
+312.04 199.18 l
+o
+np
+379.61 206.38 m
+379.61 199.18 l
+o
+np
+447.18 206.38 m
+447.18 199.18 l
+o
+/ps 12 def R 12 s
+176.89 180.46 (-2) 0.50 0.00 0.00 t
+244.47 180.46 (-1) 0.50 0.00 0.00 t
+312.04 180.46 (0) 0.50 0.00 0.00 t
+379.61 180.46 (1) 0.50 0.00 0.00 t
+447.18 180.46 (2) 0.50 0.00 0.00 t
+np
+140.68 215.61 m
+140.68 359.17 l
+o
+np
+140.68 215.61 m
+133.48 215.61 l
+o
+np
+140.68 236.11 m
+133.48 236.11 l
+o
+np
+140.68 256.62 m
+133.48 256.62 l
+o
+np
+140.68 277.13 m
+133.48 277.13 l
+o
+np
+140.68 297.64 m
+133.48 297.64 l
+o
+np
+140.68 318.15 m
+133.48 318.15 l
+o
+np
+140.68 338.66 m
+133.48 338.66 l
+o
+np
+140.68 359.17 m
+133.48 359.17 l
+o
+123.40 215.61 (-3) 0.50 0.00 90.00 t
+123.40 256.62 (-1) 0.50 0.00 90.00 t
+123.40 277.13 (0) 0.50 0.00 90.00 t
+123.40 297.64 (1) 0.50 0.00 90.00 t
+123.40 318.15 (2) 0.50 0.00 90.00 t
+123.40 338.66 (3) 0.50 0.00 90.00 t
+123.40 359.17 (4) 0.50 0.00 90.00 t
+np
+140.68 206.38 m
+483.40 206.38 l
+483.40 361.90 l
+140.68 361.90 l
+140.68 206.38 l
+o
+81.64 132.94 513.64 420.94 cl
+/ps 12 def R 12 s
+0.0000 0.0000 0.0000 rgb
+312.04 137.26 (Normal Q-Q Plot) 0.50 0.00 0.00 t
+312.04 151.66 (Theoretical Quantiles) 0.50 0.00 0.00 t
+94.60 284.14 (Studentized Residual Quantiles) 0.50 0.00 90.00 t
+ep
+%%Trailer
+%%Pages: 1
+%%EOF

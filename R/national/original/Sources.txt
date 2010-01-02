@@ -1,0 +1,217 @@
+The files were copied from originals located at:
+
+  /home/jwand/xchg/election/R/production2000a/R.1fac.merge:
+
+  total 40584
+  drwxrws---   27 jsekhon  research     6381 Jun 27  2001 .
+  drwxrws---   29 jsekhon  research      871 Aug  9  2001 ..
+  -rw-rw----    1 jsekhon  research  2932273 Jun 21  2001 a1b.ps500.wg50.Rout
+  -rw-rw----    1 jsekhon  research       59 Jun 21  2001 a1b.ps500.wg50.Rtime
+  -rw-rw----    1 jsekhon  research    16495 Jun 21  2001 a1b.R
+  -rw-rw----    1 jsekhon  research    16488 Jun 20  2001 a1b.R~
+  -rw-rw----    1 jsekhon  research  2141648 Jun 23  2001 a1cAR.ps500.wg20.Rout
+  -rw-rw----    1 jsekhon  research       58 Jun 23  2001 a1cAR.ps500.wg20.Rtime
+  -rw-rw----    1 jsekhon  research    16656 Jun 23  2001 a1cAR.R
+  -rw-rw----    1 jsekhon  research    16569 Jun 23  2001 a1cAR.R~
+  -rw-rw----    1 jsekhon  research  2140544 Jun 21  2001 a1c.ps500wg20.Rout
+  -rw-rw----    1 jsekhon  research       57 Jun 21  2001 a1c.ps500wg20.Rtime
+  -rw-rw----    1 jsekhon  research    16659 Jun 23  2001 a1c.R
+  -rw-rw----    1 jsekhon  research    16569 Jun 21  2001 a1c.R~
+  -rw-rw----    1 jsekhon  research  1043694 Jun 21  2001 a1c.Rout
+  -rw-rw----    1 jsekhon  research  4154676 Jun 23  2001 a1d.ps1000.wg50.Rout
+  -rw-rw----    1 jsekhon  research       73 Jun 23  2001 a1d.ps100.wg50.Rtime
+  -rw-rw----    1 jsekhon  research    16478 Jun 21  2001 a1d.R
+  -rw-rw----    1 jsekhon  research    16473 Jun 21  2001 a1d.R~
+  -rw-rw----    1 jsekhon  research  2029522 Jun 26  2001 a1e2.ps500.wg30.mg300.Rout
+  -rw-rw----    1 jsekhon  research       56 Jun 26  2001 a1e2.ps500.wg30.mg300.Rtime
+  -rw-rw----    1 jsekhon  research    16953 Jun 26  2001 a1e2.R
+  -rw-rw----    1 jsekhon  research    16631 Jun 26  2001 a1e2.R~
+  -rw-rw----    1 jsekhon  research  1092930 Jun 26  2001 a1e3CT.ps500.wg30.mg300.Rout
+  -rw-rw----    1 jsekhon  research       53 Jun 26  2001 a1e3CT.ps500.wg30.mg300.Rtime
+  -rw-rw----    1 jsekhon  research    16844 Jun 26  2001 a1e3CT.R
+  -rw-rw----    1 jsekhon  research    16631 Jun 26  2001 a1e.R
+  -rw-rw----    1 jsekhon  research    16656 Jun 25  2001 a1e.R~
+  -rw-rw----    1 jsekhon  research  2100086 Jun 26  2001 a1e.Rout
+  -rw-rw----    1 jsekhon  research       56 Jun 26  2001 a1e.Rtime
+  -rw-rw----    1 jsekhon  research   883632 Jun 21  2001 a1.ps10.wg1.Rout
+  -rw-rw----    1 jsekhon  research       51 Jun 21  2001 a1.ps10.wg1.Rtime
+  -rw-rw----    1 jsekhon  research  1462212 Jun 20  2001 a1.ps200.wg20.Rout
+  -rw-rw----    1 jsekhon  research      620 Jun 21  2001 a1.ps200.wg20.Rtime
+  -rw-rw----    1 jsekhon  research    16491 Jun 21  2001 a1.R
+  -rw-rw----    1 jsekhon  research    16485 Jun 20  2001 a1.R~
+  -rw-rw----    1 jsekhon  research    16572 Jun 21  2001 a1.test.R
+  -rw-rw----    1 jsekhon  research    16569 Jun 21  2001 a1.test.R~
+  -rw-rw----    1 jsekhon  research   874327 Jun 21  2001 a1.test.Rout
+  -rw-rw----    1 jsekhon  research  1133962 Jun 26  2001 ak1.ps500.wg30.mg300.Rout
+  -rw-rw----    1 jsekhon  research       54 Jun 26  2001 ak1.ps500.wg30.mg300.Rtime
+  -rw-rw----    1 jsekhon  research    16658 Jun 26  2001 ak1.R
+  -rw-rw----    1 jsekhon  research    16659 Jun 26  2001 ak1.R~
+  -rw-rw----    1 jsekhon  research   256635 Jun 27  2001 ak2.ps700.wg100.mg1000.Rout
+  -rw-rw----    1 jsekhon  research      273 Jun 27  2001 ak2.ps700.wg100.mg1000.Rtime
+  -rw-rw----    1 jsekhon  research    16843 Jun 27  2001 ak2.R
+  -rw-rw----    1 jsekhon  research    16854 Jun 26  2001 ak2.R~
+  -rw-rw----    1 jsekhon  research     1374 Jun 27  2001 ak3.ps1000.wg100.mg1000.R
+  -rw-rw----    1 jsekhon  research  2209295 Jun 27  2001 ak3.ps1000.wg100.mg1000.Rout
+  -rw-rw----    1 jsekhon  research       68 Jun 27  2001 ak3.ps1000.wg100.mg1000.Rtime
+  -rw-rw----    1 jsekhon  research    16930 Jun 27  2001 ak3.R
+  -rw-rw----    1 jsekhon  research    16929 Jun 27  2001 ak3.R~
+  -rw-rw----    1 jsekhon  research      508 Jun 27  2001 ak4.ps200.wg100.mg1000.Rout
+  -rw-rw----    1 jsekhon  research       49 Jun 27  2001 ak4.ps200.wg100.mg1000.Rtime
+  -rw-rw----    1 jsekhon  research    16937 Jun 27  2001 ak4.R
+  -rw-rw----    1 jsekhon  research    16930 Jun 27  2001 ak4.R~
+  -rw-rw----    1 jsekhon  research  2155164 Jun 27  2001 ak5.ps200.wg100.mg1000.Rout
+  -rw-rw----    1 jsekhon  research       62 Jun 27  2001 ak5.ps200.wg100.mg1000.Rtime
+  -rw-rw----    1 jsekhon  research    16937 Jun 27  2001 ak5.R
+  -rw-rw----    1 jsekhon  research    16937 Jun 27  2001 ak5.R~
+  -rw-rw----    1 jsekhon  research  1752027 Jun 27  2001 ak6.ps1000.wg100.mg1000.Rout
+  -rw-rw----    1 jsekhon  research       68 Jun 27  2001 ak6.ps1000.wg100.mg1000.Rtime
+  -rw-rw----    1 jsekhon  research    16929 Jun 27  2001 ak6.R
+  -rw-rw----    1 jsekhon  research    16928 Jun 27  2001 ak6.R~
+  -rw-rw----    1 jsekhon  research     3620 Jun 20  2001 ak.county.20jun0436.dat
+  -rw-rw----    1 jsekhon  research      663 Jun 20  2001 ak.county.columns20jun0436.txt
+  -rw-rw----    1 jsekhon  research     3620 Jun 20  2001 ak.county.wrk1
+  -rw-rw----    1 jsekhon  research     3620 Jun 20  2001 ak.county.wrk1~
+  -rw-rw----    1 jsekhon  research      532 Jun 20  2001 ak.county.wrk1.names
+  -rw-rw----    1 jsekhon  research      663 Jun 20  2001 ak.county.wrk1.names~
+  -rw-rw----    1 jsekhon  research     4153 Jun 20  2001 ak.join.dat
+  -rw-rw----    1 jsekhon  research     1267 Jun 20  2001 ak.join.label
+  -rw-rw----    1 jsekhon  research    16854 Jun 27  2001 ak.ps0.wg0.R~
+  -rw-rw----    1 jsekhon  research    16887 Jun 27  2001 ak.ps10.wg1.R
+  -rw-rw----    1 jsekhon  research    16830 Jun 27  2001 ak.ps10.wg1.R~
+  -rw-rw----    1 jsekhon  research   810266 Jun 27  2001 ak.ps10.wg1.Rout
+  -rw-rw----    1 jsekhon  research       50 Jun 27  2001 ak.ps10.wg1.Rtime
+  -rw-rw----    1 jsekhon  research      360 Jun 20  2001 common
+  -rw-rw----    1 jsekhon  research      641 Jun 20  2001 common~
+  -rw-rw----    1 jsekhon  research     3297 Jun 20  2001 data1.R
+  -rw-rw----    1 jsekhon  research      344 Jun 20  2001 data1.R~
+  -rw-rw----    1 jsekhon  research     3289 Jun 26  2001 data2.R
+  -rw-rw----    1 jsekhon  research     3297 Jun 20  2001 data2.R~
+  -rw-rw----    1 jsekhon  research     4091 Jun 27  2001 data2.Rout
+  -rw-rw----    1 jsekhon  research     3311 Jun 26  2001 data3.R
+  -rw-rw----    1 jsekhon  research     4113 Jun 27  2001 data3.Rout
+  -rw-rw----    1 jsekhon  research     5648 Apr  3  2001 fit_lqd1.cpp
+  -rw-rw----    1 jsekhon  research     4640 Apr  3  2001 fit_lqd1.o
+  -rwxrwx---    1 jsekhon  research    10218 Apr  3  2001 fit_lqd.so
+  -rw-rw----    1 jsekhon  research     1003 Apr  2  2001 makefile
+  -rw-rw----    1 jsekhon  research    17869 Apr 16  2001 natplot.tanh6.engine6.PRODUCTION.16apr01.R
+  -rw-rw----    1 jsekhon  research     4875 Jun 21  2001 parms.use.a1b.lapo
+  -rw-rw----    1 jsekhon  research     4912 Jun 23  2001 parms.use.a1cAR.ps500.wg20.mg200.musil
+  -rw-rw----    1 jsekhon  research     4875 Jun 21  2001 parms.use.a1c.musil
+  -rw-rw----    1 jsekhon  research     4892 Jun 21  2001 parms.use.a1c.ps500.wg20.mg200.musil
+  -rw-rw----    1 jsekhon  research     4875 Jun 23  2001 parms.use.a1d.lapo
+  -rw-rw----    1 jsekhon  research     4949 Jun 26  2001 parms.use.a1e2CT.ps500.wg30.mg300.lapo
+  -rw-rw----    1 jsekhon  research     4947 Jun 26  2001 parms.use.a1e2.ps500.wg30.mg300.lapo
+  -rw-rw----    1 jsekhon  research     4949 Jun 26  2001 parms.use.a1e3CT.ps500.wg30.mg300.lapo
+  -rw-rw----    1 jsekhon  research     4855 Jun 26  2001 parms.use.a1e3.ps500.wg30.mg300.lapo
+  -rw-rw----    1 jsekhon  research     4925 Jun 26  2001 parms.use.a1e.ps500.wg30.mg300.lapo
+  -rw-rw----    1 jsekhon  research     4957 Jun 21  2001 parms.use.a1.lapo
+  -rw-rw----    1 jsekhon  research     4874 Jun 21  2001 parms.use.a1.musil
+  -rw-rw----    1 jsekhon  research     4874 Jun 21  2001 parms.use.a1.test.ps10.wg1.mg10.musil
+  -rw-rw----    1 jsekhon  research     4863 Jun 26  2001 parms.use.ak1.ps500.wg30.mg300.lapo
+  -rw-rw----    1 jsekhon  research     4855 Jun 26  2001 parms.use.ak1.ps500.wg30.mg300.lapo~
+  -rw-rw----    1 jsekhon  research     4857 Jun 27  2001 parms.use.ak3.ps1000.wg100.mg1000.lapo
+  -rw-rw----    1 jsekhon  research     4902 Jun 27  2001 parms.use.ak4.ps200.wg100.mg1000.musil
+  -rw-rw----    1 jsekhon  research     4857 Jun 27  2001 parms.use.ak5.ps200.wg100.mg1000.musil
+  -rw-rw----    1 jsekhon  research     4902 Jun 27  2001 parms.use.ak6.ps1000.wg100.mg1000.lapo
+  -rw-rw----    1 jsekhon  research     4905 Jun 27  2001 parms.use.ak.ps10.wg1.mg10.lapo
+  -rw-rw----    1 jsekhon  research     4896 Jun 27  2001 parms.use.ak.ps10.wg1.mg10.musil
+  -rw-rw----    1 jsekhon  research     4892 Jun 23  2001 parms.use.JUNE23a
+  -rw-rw----    1 jsekhon  research     4892 Jun 26  2001 parms.use.PRODUCTION.JUNE23.ps0.wg0.mg0.musil
+  -rw-rw----    1 jsekhon  research     4905 Jun 27  2001 parms.use.PRODUCTION.JUNE26.ps0.wg0.mg0.lapo
+  -rw-rw----    1 jsekhon  research     4902 Jun 27  2001 parms.use.PRODUCTION.JUNE27.ps0.wg0.mg0.musil
+  -rw-rw----    1 jsekhon  research     4680 Apr 16  2001 parms.use.tanh6.engine6.PRODUCTION.16apr01.musil
+  -rw-rw----    1 jsekhon  research     4870 Jun 21  2001 parms.use.TEST
+  -rw-rw----    1 jsekhon  research     4874 Jun 21  2001 parms.use.TEST~
+  -rw-rw----    1 jsekhon  research     4883 Jun 21  2001 parms.use.TEST2
+  -rw-rw----    1 jsekhon  research     4870 Jun 21  2001 parms.use.TEST2~
+  -rw-rw----    1 jsekhon  research     4871 Jun 27  2001 parms.use.TMP
+  -rw-rw----    1 jsekhon  research     4863 Jun 27  2001 parms.use.TMP~
+  -rw-rw----    1 jsekhon  research     4877 Jun 27  2001 parms.use.TMP2
+  -rw-rw----    1 jsekhon  research     4871 Jun 27  2001 parms.use.TMP2~
+  -rw-rw----    1 jsekhon  research     4857 Jun 27  2001 parms.use.TMP3
+  -rw-rw----    1 jsekhon  research     4874 Jun 27  2001 parms.use.TMP3~
+  -rw-rw----    1 jsekhon  research     4842 Jun 27  2001 parms.use.TMP4
+  -rw-rw----    1 jsekhon  research     4855 Jun 27  2001 parms.use.TMP4~
+  -rw-rw----    1 jsekhon  research     4817 Jun 27  2001 parms.use.TMP5
+  -rw-rw----    1 jsekhon  research     4842 Jun 27  2001 parms.use.TMP5~
+  -rw-rw----    1 jsekhon  research     4957 Jun 21  2001 parms.use.UPDATED
+  -rw-rw----    1 jsekhon  research    16802 Jun 26  2001 pooling1.R
+  -rw-rw----    1 jsekhon  research    16659 Jun 26  2001 pooling1.R~
+  drwxrws---    2 jsekhon  research     2928 Jun 21  2001 postscript.a1b.lapo
+  drwxrws---    2 jsekhon  research     2965 Jun 23  2001 postscript.a1cAR.ps500.wg20.mg200.musil
+  drwxrws---    2 jsekhon  research     2928 Jun 21  2001 postscript.a1c.musil
+  drwxrws---    2 jsekhon  research     2945 Jun 21  2001 postscript.a1c.ps500.wg20.mg200.musil
+  drwxrws---    2 jsekhon  research     2928 Jun 21  2001 postscript.a1d.lapo
+  drwxrws---    2 jsekhon  research     3002 Jun 26  2001 postscript.a1e2CT.ps500.wg30.mg300.lapo
+  drwxrws---    2 jsekhon  research     3000 Jun 26  2001 postscript.a1e2.ps500.wg30.mg300.lapo
+  drwxrws---    2 jsekhon  research     3002 Jun 26  2001 postscript.a1e3CT.ps500.wg30.mg300.lapo
+  drwxrws---    2 jsekhon  research       35 Jun 26  2001 postscript.a1e.ps500.wg100.mg1000.lapo
+  drwxrws---    2 jsekhon  research     2978 Jun 26  2001 postscript.a1e.ps500.wg30.mg300.lapo
+  drwxrws---    2 jsekhon  research     2952 Jun 20  2001 postscript.a1.lapo
+  drwxrws---    2 jsekhon  research     3040 Jun 21  2001 postscript.a1.musil
+  drwxrws---    2 jsekhon  research     2927 Jun 21  2001 postscript.a1.test.ps10.wg1.mg10.musil
+  drwxrws---    2 jsekhon  research     2952 Jun 26  2001 postscript.ak1.ps500.wg30.mg300.lapo
+  drwxrws---    2 jsekhon  research       35 Jun 27  2001 postscript.ak2.ps1000.wg100.mg1000.lapo
+  drwxrws---    2 jsekhon  research       35 Jun 26  2001 postscript.ak2.ps700.wg100.mg1000.lapo
+  drwxrws---    2 jsekhon  research     2954 Jun 27  2001 postscript.ak3.ps1000.wg100.mg1000.lapo
+  drwxrws---    2 jsekhon  research     2954 Jun 27  2001 postscript.ak4.ps200.wg100.mg1000.musil
+  drwxrws---    2 jsekhon  research     2954 Jun 27  2001 postscript.ak5.ps200.wg100.mg1000.musil
+  drwxrws---    2 jsekhon  research     2954 Jun 27  2001 postscript.ak6.ps1000.wg100.mg1000.lapo
+  drwxrws---    2 jsekhon  research     2957 Jun 27  2001 postscript.ak.ps10.wg1.mg10.lapo
+  drwxrws---    2 jsekhon  research     2948 Jun 27  2001 postscript.ak.ps10.wg1.mg10.musil
+  drwxrws---    2 jsekhon  research     2945 Jun 26  2001 postscript.PRODUCTION.JUNE23.ps0.wg0.mg0.musil
+  drwxrws---    2 jsekhon  research     3004 Jun 27  2001 postscript.PRODUCTION.JUNE26.ps0.wg0.mg0.lapo
+  drwxrws---    2 jsekhon  research     2954 Jun 27  2001 postscript.PRODUCTION.JUNE27.ps0.wg0.mg0.musil
+  -rw-rw----    1 jsekhon  research     1955 Apr 12  2001 prcomp4.R
+  -rw-rw----    1 jsekhon  research    12422 Jun 26  2001 PRODUCTION.BOX.pdf
+  -rw-rw----    1 jsekhon  research    26128 Jun 27  2001 PRODUCTION.BOX.ps
+  -rw-rw----    1 jsekhon  research     1606 Jun 26  2001 PRODUCTION.BOX.R~
+  -rw-rw----    1 jsekhon  research     1759 Jun 26  2001 PRODUCTION.BOX.R
+  -rw-rw----    1 jsekhon  research     2488 Jun 27  2001 PRODUCTION.BOX.Rout
+  -rw-rw----    1 jsekhon  research    16625 Jun 26  2001 PRODUCTION.JUNE23.R
+  -rw-rw----    1 jsekhon  research   797057 Jun 26  2001 PRODUCTION.JUNE23.Rout
+  -rw-rw----    1 jsekhon  research    16613 Jun 27  2001 PRODUCTION.JUNE26.R
+  -rw-rw----    1 jsekhon  research    16658 Jun 26  2001 PRODUCTION.JUNE26.R~
+  -rw-rw----    1 jsekhon  research   792014 Jun 27  2001 PRODUCTION.JUNE26.Rout
+  -rw-rw----    1 jsekhon  research    16638 Jun 27  2001 PRODUCTION.JUNE27.R
+  -rw-rw----    1 jsekhon  research    16613 Jun 27  2001 PRODUCTION.JUNE27.R~
+  -rw-rw----    1 jsekhon  research   791996 Jun 27  2001 PRODUCTION.JUNE27.Rout
+  -rw-rw----    1 jsekhon  research  8509609 Jun 27  2001 .RData
+  -rw-rw----    1 jsekhon  research     3099 Jun 17  2001 rewtanh2.R
+  -rw-rw----    1 jsekhon  research      387 Jun 26  2001 .Rhistory
+  -rw-rw----    1 jsekhon  research      212 Jun 21  2001 test.R
+
+
+## small states
+
+  /home/jwand/xchg/election/R/production2000a/pooling2.1fac:
+
+  -rw-rw----    1 jsekhon  research    19627 Aug  8  2001 a4int2.ps1000.wg200.R
+  -rw-rw----    1 jsekhon  research   406218 Aug  8  2001 a4int2.ps1000.wg200.Rout
+
+## 1996 analysis
+  /home/jwand/xchg/election/R/production2000a/florida.1996:
+  -rw-rw----    1 jsekhon  research    17389 Apr 16  2001 natplot.tanh6.partial.FL96.1000.R
+  -rw-rw----    1 jsekhon  research       67 Apr 16  2001 natplot.tanh6.partial.FL96.1000.Rtime
+  -rw-rw----    1 jsekhon  research  1531977 Apr 16  2001 natplot.tanh6.partial.FL96.1000.Rout
+  -rw-rw----    1 jsekhon  research  3151273 Apr 16  2001 .RData
+
+
+## rewtanh canonical file
+
+These two are the same, despite different timestamps,
+
+  /home/jwand/xchg/election/R/production2000a/pooling2.1fac:
+  -rw-rw----    1 jsekhon  research     3099 Jun 27  2001 rewtanh2.R
+
+  /home/jwand/xchg/election/R/production2000a/R.1fac.merge:
+  -rw-rw----    1 jsekhon  research     3099 Jun 17  2001 rewtanh2.R
+
+This file is obsolete:
+
+  /home/jwand/xchg/election/R/production2000a/florida.1996:
+  -rw-r-----    1 jsekhon  research     2529 Apr  1  2001 rewtanh.R
+
+## data
+  /home/jwand/xchg/election/data/final:
+  -rw-rw----    1 jwand    research  1534742 Jul 26  2001 us.with2000censusAKRIDEHI.26july.csv

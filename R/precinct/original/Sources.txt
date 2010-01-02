@@ -1,0 +1,27 @@
+% point estimates and SEs are from
+% All Precincts Buchanan
+% lapo:/home/wrm1/xchg/election/R/herron2/all2:
+% -rw-rw----    1 wrm1     research    55611 Jun 18 01:31 rewt3.Rout
+% District 35 Buchanan
+% lapo:/home/wrm1/xchg/election/R/herron2/v1:
+% -rw-rw----    1 wrm1     research    14531 Jun 17 04:53 rewt2.Rout
+% District 35 Lowe
+% lapo:/home/wrm1/xchg/election/R/herron2/v2:
+% -rw-rw----    1 wrm1     research    14963 Jun 17 04:55 rewt2.Rout
+% District 16 Buchanan
+% lapo:/home/wrm1/xchg/election/R/herron2/v3:
+% -rw-rw----    1 wrm1     research    19535 Jun 17 04:59 rewt3.Rout
+% District 16 McGuire
+% lapo:/home/wrm1/xchg/election/R/herron2/v4:
+% -rw-rw----    1 wrm1     research    20547 Jun 17 05:00 rewt3.Rout
+
+  /home/jwand/xchg/election/R/lqd:
+  -rw-rw----    1 wrm1     research     3099 Jun 17  2001 rewtanh2.R
+
+  /home/jwand/xchg/election/R/herron2:
+  -rw-rw-r--    1 jwand    research    49122 Feb  2  2001 2000pres.parsed.txt
+  -rw-rw----    1 jwand    research    59039 Feb  3  2001 2000senate.parsed.txt
+  -rw-rw----    1 jwand    research     5271 Feb  4  2001 data.pbc.R
+  -rw-rw----    1 jwand    research     8353 Feb 10  2001 function.lqd8.R
+  -rw-rw-r--    1 jwand    research    21224 Feb  2  2001 pbc.statesenate35.all.txt
+  -rw-rw-r--    1 jwand    research    29214 Feb  2  2001 pbc.ushouse16.all.txt

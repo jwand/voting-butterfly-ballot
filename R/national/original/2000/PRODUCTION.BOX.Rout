@@ -1,0 +1,70 @@
+
+R : Copyright 2001, The R Development Core Team
+Version 1.2.2  (2001-02-26)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type `license()' or `licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type `contributors()' for more information.
+
+Type `demo()' for some demos, `help()' for on-line help, or
+`help.start()' for a HTML browser interface to help.
+Type `q()' to quit R.
+
+[Previously saved workspace restored]
+
+> invisible(options(echo = TRUE))
+> 
+> postscript(file="PRODUCTION.BOX.ps", width=8, height=6, horizontal=T, paper="letter",
++            onefile=T)
+> 
+> par(cex.axis=.9);
+> cres.split _ split(county.results[,"student"],us$state)
+> cres.box _ boxplot(cres.split, axes=F)
+> cres.nbox _ length(cres.box$names)
+> axis(1,at=1:cres.nbox, labels=F)
+> cres.axidx _ (0 : (floor(cres.nbox/3)-1))*3+1
+> cres.extra _ cres.nbox %% 3
+> 
+> axis(1,at=cres.axidx, labels=cres.box$names[cres.axidx], tick=F)
+> if (cres.extra == 1) {
++   axis(1,at=cres.nbox, labels=cres.box$names[cres.nbox], tick=F, line=0)
++ }
+> 
+> axis(1,at=1+cres.axidx, labels=cres.box$names[1+cres.axidx], tick=F, line=1)
+> if (cres.extra == 2) {
++   axis(1,at=cres.nbox-1, labels=cres.box$names[cres.nbox-1], tick=F, line=0)
++   axis(1,at=cres.nbox, labels=cres.box$names[cres.nbox], tick=F, line=1)
++ }
+> 
+> axis(1,at=2+cres.axidx, labels=cres.box$names[2+cres.axidx], tick=F, line=2)
+> 
+> #axis(1,at=(1+cres.nbox)/2, labels="State", tick=F, line=3, cex.axis=.9)
+> 
+> cres.rng _ range(cres.box$out)
+> cres.yax _ (ceiling(cres.rng[1]/5) : floor(cres.rng[2]/5)) * 5
+> axis(2,at=cres.yax, labels=cres.yax)
+> axis(2,at=sum(cres.rng)/2,
++   labels="Studentized Residual from Expected Vote for Buchanan", tick=F, line=2)
+> 
+> boxFL _ (1:cres.nbox)[cres.box$names=="FL"]
+> text(boxFL+6,max(cres.box$out),"Palm Beach, FL", adj=0)
+> arrows(boxFL+5.5,max(cres.box$out),boxFL+1,max(cres.box$out), length=.075, code=2)
+> 
+> boxSC _ (1:cres.nbox)[cres.box$names=="SC"]
+> text(boxSC-6,rev(sort(cres.box$out))[2],"Jasper, SC", adj=1)
+> arrows(boxSC-5.5,rev(sort(cres.box$out))[2],boxSC-1,rev(sort(cres.box$out))[2],
++   length=.075, code=2)
+> 
+> boxLA _ (1:cres.nbox)[cres.box$names=="LA"]
+> text(boxLA+6,min(cres.box$out),"Orleans, LA", adj=0)
+> arrows(boxLA+5.5,min(cres.box$out),boxLA+1,min(cres.box$out), length=.075, code=2)
+> 
+> dev.off()
+null device 
+          1 
+> proc.time()
+[1] 3.36 0.28 4.03 0.00 0.00
+> 

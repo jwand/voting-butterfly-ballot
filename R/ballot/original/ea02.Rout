@@ -1,0 +1,364 @@
+
+R : Copyright 2001, The R Development Core Team
+Version 1.2.2  (2001-02-26)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type `license()' or `licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type `contributors()' for more information.
+
+Type `demo()' for some demos, `help()' for on-line help, or
+`help.start()' for a HTML browser interface to help.
+Type `q()' to quit R.
+
+[Previously saved workspace restored]
+
+> invisible(options(echo = TRUE))
+> dat <- as.data.frame(read.csv("table.out",header=F))
+> colnames(dat) <- c("precinct","pres","senate","count")
+> 
+> dat$count[is.na(dat$count)] <- 0
+> aidx <- substr(as.character(dat$precinct),1,1) == "a"
+> 
+> dat$isabs _ ifelse(aidx,1,0)
+> 
+> xtabs(count ~ pres + senate, data=dat)
+            senate
+pres         deckard logan martin mccollum mccormick nelson over simonetta
+  browne          36    49     16      229        72    216    4        40
+  buchanan        67    35     12      498        20   2382   50        31
+  bush           320   907    265   121840       419  17317  861       544
+  gore           484  2679    453    18851       681 223554 1071      1639
+  hagelin          6    14      2       28         5     29    3        39
+  harris           2     1      2        3         2     14    1         2
+  mcreynolds       6     5      1       32         2    187    5        26
+  moorehead        2     2      5       17        19     26    5         4
+  nader          169   307     78     1664       101   2473   21       231
+  over            92   177    144     3236       212  11672 1664       251
+  phillips         7    18      9       59        12     36    6         6
+  under           43    68     27     2432        40   3593  208        56
+  writein          0     0      0        0         0      0    0         0
+            senate
+pres         under writein
+  browne        61       0
+  buchanan     247       0
+  bush        4782       0
+  gore       10967       0
+  hagelin       15       0
+  harris        15       2
+  mcreynolds    30       0
+  moorehead     18       0
+  nader        350       1
+  over        1358       4
+  phillips      33       0
+  under       3527       5
+  writein        4       0
+> xtabs(count ~ pres + senate + isabs, data=dat)
+, , isabs = 0
+
+            senate
+pres         deckard logan martin mccollum mccormick nelson over simonetta
+  browne          36    40     16      200        66    200    2        39
+  buchanan        59    35     12      469        17   2350   50        29
+  bush           285   847    249   107465       382  15973  797       496
+  gore           447  2503    433    17678       656 207333 1007      1545
+  hagelin          5    14      2       27         5     27    3        34
+  harris           2     1      2        3         2     14    1         2
+  mcreynolds       6     4      1       29         2    180    5        25
+  moorehead        2     2      3       15        19     23    5         4
+  nader          152   284     74     1534        96   2321   20       211
+  over            90   170    143     3177       209  11547 1656       249
+  phillips         6    18      9       57        11     34    6         6
+  under           35    64     26     2270        38   3343  130        55
+  writein          0     0      0        0         0      0    0         0
+            senate
+pres         under writein
+  browne        53       0
+  buchanan     240       0
+  bush        3965       0
+  gore        9738       0
+  hagelin       14       0
+  harris        14       2
+  mcreynolds    30       0
+  moorehead     18       0
+  nader        313       1
+  over        1326       4
+  phillips      33       0
+  under       3056       5
+  writein        4       0
+
+, , isabs = 1
+
+            senate
+pres         deckard logan martin mccollum mccormick nelson over simonetta
+  browne           0     9      0       29         6     16    2         1
+  buchanan         8     0      0       29         3     32    0         2
+  bush            35    60     16    14375        37   1344   64        48
+  gore            37   176     20     1173        25  16221   64        94
+  hagelin          1     0      0        1         0      2    0         5
+  harris           0     0      0        0         0      0    0         0
+  mcreynolds       0     1      0        3         0      7    0         1
+  moorehead        0     0      2        2         0      3    0         0
+  nader           17    23      4      130         5    152    1        20
+  over             2     7      1       59         3    125    8         2
+  phillips         1     0      0        2         1      2    0         0
+  under            8     4      1      162         2    250   78         1
+  writein          0     0      0        0         0      0    0         0
+            senate
+pres         under writein
+  browne         8       0
+  buchanan       7       0
+  bush         817       0
+  gore        1229       0
+  hagelin        1       0
+  harris         1       0
+  mcreynolds     0       0
+  moorehead      0       0
+  nader         37       0
+  over          32       0
+  phillips       0       0
+  under        471       0
+  writein        0       0
+
+> 
+> dat$pspoiled _ dat$pres=="over" | dat$pres=="under" ;
+> dat$sspoiled _ dat$senate=="over" | dat$senate=="under" ;
+> 
+> dat$vbuchanan _ factor(ifelse(dat$pres=="buchanan", "ybuch", "nbuch"))
+> dat$vnelson   _ factor(ifelse(dat$senate=="nelson", "ynels", "nnels"))
+> dat$vdeckard  _ factor(ifelse(dat$senate=="deckard", "ydeck", "ndeck"))
+> 
+> dat$ibuchanan _ ifelse(dat$pres=="buchanan", 1,0)
+> dat$inelson   _ ifelse(dat$senate=="nelson", 1,0)
+> dat$ideckard  _ ifelse(dat$senate=="deckard", 1,0)
+> 
+> # dat6: reduced data frame including all ballots
+> dat6 _ as.data.frame.table(
++  xtabs(count ~ precinct + ibuchanan + inelson + ideckard,
++    data=dat))
+> dat6$isabs _ ifelse(substr(as.character(dat6$precinct),1,1) == "a",1,0)
+> 
+> xtabs(Freq ~ ibuchanan + inelson + ideckard, data=dat6)
+, , ideckard = 0
+
+         inelson
+ibuchanan      0      1
+        0 183044 259117
+        1    893   2382
+
+, , ideckard = 1
+
+         inelson
+ibuchanan    0 1
+        0 1167 0
+        1   67 0
+
+> xtabs(Freq ~ ibuchanan + inelson + ideckard, subset= isabs==0, data=dat6)
+, , ideckard = 0
+
+         inelson
+ibuchanan      0      1
+        0 163720 240995
+        1    852   2350
+
+, , ideckard = 1
+
+         inelson
+ibuchanan    0 1
+        0 1066 0
+        1   59 0
+
+> xtabs(Freq ~ ibuchanan + inelson + ideckard, subset= isabs==1, data=dat6)
+, , ideckard = 0
+
+         inelson
+ibuchanan     0     1
+        0 19324 18122
+        1    41    32
+
+, , ideckard = 1
+
+         inelson
+ibuchanan   0 1
+        0 101 0
+        1   8 0
+
+> 
+> # dat6ns: reduced data frame excluding under/overvoted ballots
+> dat6ns _ as.data.frame.table(
++  xtabs(count ~ precinct + ibuchanan + inelson + ideckard,
++    subset= !pspoiled, data=dat))
+> dat6ns$isabs _ ifelse(substr(as.character(dat6ns$precinct),1,1) == "a",1,0)
+> 
+> xtabs(Freq ~ ibuchanan + inelson + ideckard, data=dat6ns)
+, , ideckard = 0
+
+         inelson
+ibuchanan      0      1
+        0 169635 243852
+        1    893   2382
+
+, , ideckard = 1
+
+         inelson
+ibuchanan    0 1
+        0 1032 0
+        1   67 0
+
+> xtabs(Freq ~ ibuchanan + inelson + ideckard, subset= isabs==0, data=dat6ns)
+, , ideckard = 0
+
+         inelson
+ibuchanan      0      1
+        0 151142 226105
+        1    852   2350
+
+, , ideckard = 1
+
+         inelson
+ibuchanan   0 1
+        0 941 0
+        1  59 0
+
+> xtabs(Freq ~ ibuchanan + inelson + ideckard, subset= isabs==1, data=dat6ns)
+, , ideckard = 0
+
+         inelson
+ibuchanan     0     1
+        0 18493 17747
+        1    41    32
+
+, , ideckard = 1
+
+         inelson
+ibuchanan  0 1
+        0 91 0
+        1  8 0
+
+> 
+> 
+> # election-day:  all ballots
+> summary(glm(ibuchanan ~ inelson + ideckard, weight = Freq, family=quasibinomial,
++  subset= Freq>0 & isabs==0, data=dat6 ))
+
+Call:
+glm(formula = ibuchanan ~ inelson + ideckard, family = quasibinomial, 
+    data = dat6, weights = Freq, subset = Freq > 0 & isabs == 
+        0)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-6.2814  -2.0874  -0.5685   4.3082  19.7425  
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -5.2583     0.4719 -11.143   <2e-16 ***
+inelson1      0.6280     0.5511   1.139    0.255    
+ideckard1     2.3642     1.8981   1.246    0.213    
+---
+Signif. codes:  0  `***'  0.001  `**'  0.01  `*'  0.05  `.'  0.1  ` '  1 
+
+(Dispersion parameter for quasibinomial family taken to be 188.9565)
+
+    Null deviance: 38009  on 2163  degrees of freedom
+Residual deviance: 37617  on 2161  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 5
+
+> 
+> # absentee:  all ballots
+> summary(glm(ibuchanan ~ inelson + ideckard, weight = Freq, family=quasibinomial,
++  subset= Freq>0 & isabs==1, data=dat6 ))
+
+Call:
+glm(formula = ibuchanan ~ inelson + ideckard, family = quasibinomial, 
+    data = dat6, weights = Freq, subset = Freq > 0 & isabs == 
+        1)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.3307  -0.7873  -0.4025  -0.1456   8.7230  
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  -6.1555     1.9095  -3.224  0.00143 **
+inelson1     -0.1836     2.8810  -0.064  0.94924   
+ideckard1     3.6199     4.8788   0.742  0.45881   
+---
+Signif. codes:  0  `***'  0.001  `**'  0.01  `*'  0.05  `.'  0.1  ` '  1 
+
+(Dispersion parameter for quasibinomial family taken to be 149.4189)
+
+    Null deviance: 1156.7  on 253  degrees of freedom
+Residual deviance: 1113.8  on 251  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 5
+
+> 
+> 
+> # election-day:  excluding under/overvoted presidential ballots
+> summary(glm(ibuchanan ~ inelson + ideckard, weight = Freq, family=quasibinomial,
++  subset= Freq>0 & isabs==0, data=dat6ns ))
+
+Call:
+glm(formula = ibuchanan ~ inelson + ideckard, family = quasibinomial, 
+    data = dat6ns, weights = Freq, subset = Freq > 0 & isabs == 
+        0)
+
+Deviance Residuals: 
+   Min      1Q  Median      3Q     Max  
+-6.283  -2.108  -0.604   4.279  19.608  
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  -5.1784     0.4578 -11.312   <2e-16 ***
+inelson1      0.6118     0.5346   1.144    0.253    
+ideckard1     2.4090     1.8468   1.304    0.192    
+---
+Signif. codes:  0  `***'  0.001  `**'  0.01  `*'  0.05  `.'  0.1  ` '  1 
+
+(Dispersion parameter for quasibinomial family taken to be 177.7270)
+
+    Null deviance: 37551  on 2145  degrees of freedom
+Residual deviance: 37168  on 2143  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 5
+
+> 
+> # absentee:  excluding under/overvoted presidential ballots
+> summary(glm(ibuchanan ~ inelson + ideckard, weight = Freq, family=quasibinomial,
++  subset= Freq>0 & isabs==1, data=dat6ns ))
+
+Call:
+glm(formula = ibuchanan ~ inelson + ideckard, family = quasibinomial, 
+    data = dat6ns, weights = Freq, subset = Freq > 0 & isabs == 
+        1)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.3329  -0.7972  -0.4105  -0.1479   8.7086  
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  -6.1116     1.8899  -3.234  0.00139 **
+inelson1     -0.2066     2.8513  -0.072  0.94228   
+ideckard1     3.6802     4.8449   0.760  0.44822   
+---
+Signif. codes:  0  `***'  0.001  `**'  0.01  `*'  0.05  `.'  0.1  ` '  1 
+
+(Dispersion parameter for quasibinomial family taken to be 146.3447)
+
+    Null deviance: 1151.3  on 250  degrees of freedom
+Residual deviance: 1107.3  on 248  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 5
+
+> proc.time()
+[1] 28.13  4.03 32.15  0.00  0.00
+> 
