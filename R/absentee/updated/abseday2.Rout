@@ -1,0 +1,282 @@
+
+R : Copyright 2001, The R Development Core Team
+Version 1.3.0  (2001-06-22)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type `license()' or `licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type `contributors()' for more information.
+
+Type `demo()' for some demos, `help()' for on-line help, or
+`help.start()' for a HTML browser interface to help.
+Type `q()' to quit R.
+
+> invisible(options(echo = TRUE))
+> # crunch the Florida 2000 county-level data on absentee and election-day votes for
+> # Buchanan as a test of the equality of the proportions for each ballot type
+> 
+> abseday <- read.csv(file="abseday.FL2000.csv", header=TRUE);
+> 
+> attach(abseday);
+> 
+> #> names(abseday)
+> # [1] "X."                "County"            "Total.Pres.Votes" 
+> # [4] "Total.Buchanan"    "Total.Absentee"    "Buchanan.Absentee"
+> # [7] "Elecday.Buch.."    "Absentee.Buch.."   "Abs.Elec.Ratio"   
+> #[10] "Difference"       
+> 
+> totpres  _ Total.Pres.Votes;
+> totbuch  _ Total.Buchanan;
+> totabs   _ Total.Absentee;
+> toteday  _ Total.Pres.Votes - Total.Absentee;
+> absbuch  _ Buchanan.Absentee;
+> edaybuch _ Total.Buchanan - Buchanan.Absentee;
+> 
+> # Elecday.Buch.. == (100 * edaybuch/toteday)
+> # Absentee.Buch.. == (100 * absbuch/totabs)
+> # Abs.Elec.Ratio == (100 * (absbuch/totabs)/(edaybuch/toteday))
+> # Difference == (100 * ((edaybuch/toteday)-(absbuch/totabs)))
+> 
+> sigma _ 3.81;
+> pbucha _ absbuch / totabs;
+> pbuche _ edaybuch / toteday;
+> pvara _ pbucha * (1-pbucha) / totabs;
+> pvare _ pbuche * (1-pbuche) / toteday;
+> pvar _ pvara + pvare;
+> eapdiff  _ pbuche-pbucha;
+> zeapdiff _ eapdiff/(sigma*sqrt(pvar));
+> 
+> diffmat _ cbind(100*eapdiff, zeapdiff);
+> dimnames(diffmat) _ list(as.character(County), c("pctdiff","Zdiff"));
+> print("Election-day minus Absentee vote for Buchanan under HO:  equal proportions");
+[1] "Election-day minus Absentee vote for Buchanan under HO:  equal proportions"
+> print("Simple percentage difference (col 1), z-score of difference (col 2)");
+[1] "Simple percentage difference (col 1), z-score of difference (col 2)"
+> print("rows ordered by county name");
+[1] "rows ordered by county name"
+> print(diffmat);
+                    pctdiff        Zdiff
+Alachua       -7.684688e-02 -0.323827594
+Baker          6.196601e-01  0.757790223
+Bay            1.625780e-01  0.741490915
+Bradford       4.530284e-01  0.579783571
+Brevard        9.241126e-05  0.000783809
+Broward       -3.584349e-02 -0.484185401
+Calhoun        9.589133e-01  0.600976748
+Charlotte      3.828019e-02  0.184465163
+Citrus         9.672320e-02  0.363711777
+Clay           9.459840e-02  0.404410031
+Collier       -6.902484e-02 -0.449997738
+Columbia       2.077281e-02  0.036460202
+Desoto        -1.964233e-02 -0.025939214
+Dixie         -7.058400e-01 -0.414869033
+Duval         -1.533796e-01 -1.118655622
+Escambia       1.834442e-01  1.137111487
+Flagler        1.093314e-01  0.343462932
+Franklin       1.462136e-01  0.128843900
+Gadsden        2.320872e-01  0.843828306
+Gilchrist      2.350802e-01  0.240825620
+Glades        -3.817790e-01 -0.285311621
+Gulf           4.476198e-02  0.036764059
+Hamilton       7.306226e-01  1.263372134
+Hardee         5.794862e-01  1.441775529
+Hendry        -9.787052e-02 -0.137350005
+Hernando       1.308804e-01  0.582564511
+Highlands     -5.578170e-02 -0.139512411
+Hillsborough   5.086715e-02  0.551607883
+Holmes         4.263507e-01  0.355749892
+Indian River  -4.844226e-03 -0.021219707
+Jackson        2.011959e-01  0.308687428
+Jefferson      2.488037e-02  0.024503568
+Lafayette     -7.205537e-02 -0.053849721
+Lake           1.022615e-01  0.542221641
+Lee           -7.900265e-02 -0.586483903
+Leon          -3.931497e-02 -0.233762996
+Levy           5.229020e-01  1.402846562
+Liberty        1.773533e+00  1.653838383
+Madison       -8.191135e-02 -0.075216717
+Manatee        4.011316e-04  0.002310935
+Marion         7.576445e-02  0.288104235
+Martin        -1.071832e-01 -0.512175420
+Miami-Dade    -2.031301e-02 -0.320675642
+Monroe         2.478455e-02  0.135899676
+Nassau         2.192203e-01  0.671940845
+Okaloosa       1.917680e-01  1.047642370
+Okeechobee    -3.801924e-02 -0.055363914
+Orange        -6.332286e-03 -0.075196720
+Osceola       -1.087431e-01 -0.343717458
+Palm Beach     6.341314e-01  6.297454415
+Pasco          1.673614e-02  0.081025123
+Pinellas      -3.575697e-02 -0.354070191
+Polk          -1.607983e-02 -0.099837155
+Putnam         5.206891e-02  0.098717133
+Santa Rosa     3.811263e-01  1.364580579
+Sarasota       2.768804e-03  0.022873748
+Seminole       1.311090e-02  0.111560653
+St. Johns      2.767070e-02  0.109374013
+St. Lucie     -2.410846e-02 -0.133244601
+Sumter         4.043595e-02  0.077325476
+Suwannee       2.958871e-02  0.032209251
+Taylor         2.576108e-01  0.436666725
+Union          6.203918e-01  0.510029398
+Volusia       -2.537694e-02 -0.191257882
+Wakulla       -1.062838e-02 -0.011753987
+Walton         4.690767e-02  0.079180610
+Washington     3.032396e-01  0.261202762
+> 
+> print("Election-day minus Absentee vote for Buchanan under HO:  equal proportions");
+[1] "Election-day minus Absentee vote for Buchanan under HO:  equal proportions"
+> print("Simple percentage difference (col 1), z-score difference (col 2)");
+[1] "Simple percentage difference (col 1), z-score difference (col 2)"
+> print("rows ordered by absolute percentage difference");
+[1] "rows ordered by absolute percentage difference"
+> print(diffmat[rev(order(diffmat[,1])),]);
+                    pctdiff        Zdiff
+Liberty        1.773533e+00  1.653838383
+Calhoun        9.589133e-01  0.600976748
+Hamilton       7.306226e-01  1.263372134
+Palm Beach     6.341314e-01  6.297454415
+Union          6.203918e-01  0.510029398
+Baker          6.196601e-01  0.757790223
+Hardee         5.794862e-01  1.441775529
+Levy           5.229020e-01  1.402846562
+Bradford       4.530284e-01  0.579783571
+Holmes         4.263507e-01  0.355749892
+Santa Rosa     3.811263e-01  1.364580579
+Washington     3.032396e-01  0.261202762
+Taylor         2.576108e-01  0.436666725
+Gilchrist      2.350802e-01  0.240825620
+Gadsden        2.320872e-01  0.843828306
+Nassau         2.192203e-01  0.671940845
+Jackson        2.011959e-01  0.308687428
+Okaloosa       1.917680e-01  1.047642370
+Escambia       1.834442e-01  1.137111487
+Bay            1.625780e-01  0.741490915
+Franklin       1.462136e-01  0.128843900
+Hernando       1.308804e-01  0.582564511
+Flagler        1.093314e-01  0.343462932
+Lake           1.022615e-01  0.542221641
+Citrus         9.672320e-02  0.363711777
+Clay           9.459840e-02  0.404410031
+Marion         7.576445e-02  0.288104235
+Putnam         5.206891e-02  0.098717133
+Hillsborough   5.086715e-02  0.551607883
+Walton         4.690767e-02  0.079180610
+Gulf           4.476198e-02  0.036764059
+Sumter         4.043595e-02  0.077325476
+Charlotte      3.828019e-02  0.184465163
+Suwannee       2.958871e-02  0.032209251
+St. Johns      2.767070e-02  0.109374013
+Jefferson      2.488037e-02  0.024503568
+Monroe         2.478455e-02  0.135899676
+Columbia       2.077281e-02  0.036460202
+Pasco          1.673614e-02  0.081025123
+Seminole       1.311090e-02  0.111560653
+Sarasota       2.768804e-03  0.022873748
+Manatee        4.011316e-04  0.002310935
+Brevard        9.241126e-05  0.000783809
+Indian River  -4.844226e-03 -0.021219707
+Orange        -6.332286e-03 -0.075196720
+Wakulla       -1.062838e-02 -0.011753987
+Polk          -1.607983e-02 -0.099837155
+Desoto        -1.964233e-02 -0.025939214
+Miami-Dade    -2.031301e-02 -0.320675642
+St. Lucie     -2.410846e-02 -0.133244601
+Volusia       -2.537694e-02 -0.191257882
+Pinellas      -3.575697e-02 -0.354070191
+Broward       -3.584349e-02 -0.484185401
+Okeechobee    -3.801924e-02 -0.055363914
+Leon          -3.931497e-02 -0.233762996
+Highlands     -5.578170e-02 -0.139512411
+Collier       -6.902484e-02 -0.449997738
+Lafayette     -7.205537e-02 -0.053849721
+Alachua       -7.684688e-02 -0.323827594
+Lee           -7.900265e-02 -0.586483903
+Madison       -8.191135e-02 -0.075216717
+Hendry        -9.787052e-02 -0.137350005
+Martin        -1.071832e-01 -0.512175420
+Osceola       -1.087431e-01 -0.343717458
+Duval         -1.533796e-01 -1.118655622
+Glades        -3.817790e-01 -0.285311621
+Dixie         -7.058400e-01 -0.414869033
+> 
+> print("Election-day minus Absentee vote for Buchanan under HO:  equal proportions");
+[1] "Election-day minus Absentee vote for Buchanan under HO:  equal proportions"
+> print("Simple percentage difference (col 1), z-score difference (col 2)");
+[1] "Simple percentage difference (col 1), z-score difference (col 2)"
+> print("rows ordered by absolute z-score difference");
+[1] "rows ordered by absolute z-score difference"
+> print(diffmat[rev(order(diffmat[,2])),]);
+                    pctdiff        Zdiff
+Palm Beach     6.341314e-01  6.297454415
+Liberty        1.773533e+00  1.653838383
+Hardee         5.794862e-01  1.441775529
+Levy           5.229020e-01  1.402846562
+Santa Rosa     3.811263e-01  1.364580579
+Hamilton       7.306226e-01  1.263372134
+Escambia       1.834442e-01  1.137111487
+Okaloosa       1.917680e-01  1.047642370
+Gadsden        2.320872e-01  0.843828306
+Baker          6.196601e-01  0.757790223
+Bay            1.625780e-01  0.741490915
+Nassau         2.192203e-01  0.671940845
+Calhoun        9.589133e-01  0.600976748
+Hernando       1.308804e-01  0.582564511
+Bradford       4.530284e-01  0.579783571
+Hillsborough   5.086715e-02  0.551607883
+Lake           1.022615e-01  0.542221641
+Union          6.203918e-01  0.510029398
+Taylor         2.576108e-01  0.436666725
+Clay           9.459840e-02  0.404410031
+Citrus         9.672320e-02  0.363711777
+Holmes         4.263507e-01  0.355749892
+Flagler        1.093314e-01  0.343462932
+Jackson        2.011959e-01  0.308687428
+Marion         7.576445e-02  0.288104235
+Washington     3.032396e-01  0.261202762
+Gilchrist      2.350802e-01  0.240825620
+Charlotte      3.828019e-02  0.184465163
+Monroe         2.478455e-02  0.135899676
+Franklin       1.462136e-01  0.128843900
+Seminole       1.311090e-02  0.111560653
+St. Johns      2.767070e-02  0.109374013
+Putnam         5.206891e-02  0.098717133
+Pasco          1.673614e-02  0.081025123
+Walton         4.690767e-02  0.079180610
+Sumter         4.043595e-02  0.077325476
+Gulf           4.476198e-02  0.036764059
+Columbia       2.077281e-02  0.036460202
+Suwannee       2.958871e-02  0.032209251
+Jefferson      2.488037e-02  0.024503568
+Sarasota       2.768804e-03  0.022873748
+Manatee        4.011316e-04  0.002310935
+Brevard        9.241126e-05  0.000783809
+Wakulla       -1.062838e-02 -0.011753987
+Indian River  -4.844226e-03 -0.021219707
+Desoto        -1.964233e-02 -0.025939214
+Lafayette     -7.205537e-02 -0.053849721
+Okeechobee    -3.801924e-02 -0.055363914
+Orange        -6.332286e-03 -0.075196720
+Madison       -8.191135e-02 -0.075216717
+Polk          -1.607983e-02 -0.099837155
+St. Lucie     -2.410846e-02 -0.133244601
+Hendry        -9.787052e-02 -0.137350005
+Highlands     -5.578170e-02 -0.139512411
+Volusia       -2.537694e-02 -0.191257882
+Leon          -3.931497e-02 -0.233762996
+Glades        -3.817790e-01 -0.285311621
+Miami-Dade    -2.031301e-02 -0.320675642
+Alachua       -7.684688e-02 -0.323827594
+Osceola       -1.087431e-01 -0.343717458
+Pinellas      -3.575697e-02 -0.354070191
+Dixie         -7.058400e-01 -0.414869033
+Collier       -6.902484e-02 -0.449997738
+Broward       -3.584349e-02 -0.484185401
+Martin        -1.071832e-01 -0.512175420
+Lee           -7.900265e-02 -0.586483903
+Duval         -1.533796e-01 -1.118655622
+> proc.time()
+[1] 0.98 0.10 1.04 0.00 0.00
+> 
